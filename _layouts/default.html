@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		{% seo %}
+		{% feed_meta %}
+
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+
+		{% capture css %}
+    {% include x68k.css %}
+		{% endcapture %}
+		<style>{{ css | scssify }}</style>
+	</head>
+	<body>
+
+
+<!--		<header>
+			<div class="container">
+				<div class="company-name"><h1 style="margin: 0.5em 0"><a {% if page.url =='/' %} style="visibility:hidden" {% endif %} href="{{ site.baseurl }}/">X68K.us</a></h1></div>
+				{% include navigation.html %}
+			</div>
+		</header>
+-->
+
+		{{ content }}
+
+<!--		<footer>
+			<div class="container">
+				<div class="footer-columns">
+					{% for column in site.data.footer %}
+					<ul class="footer-links">
+						{% for link in column.links %}
+							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+								{% if link.social_icon %}
+									{% include social-icon.html icon=link.social_icon %}
+								{% endif %}
+								{{ link.name }}</a></li>
+						{% endfor %}
+					</ul>
+					{% endfor %}
+				</div>
+			</div>
+
+		</footer>
+-->
+
+		<script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+				return false;
+			};
+		</script>
+	</body>
+</html>
