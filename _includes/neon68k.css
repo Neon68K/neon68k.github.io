@@ -776,3 +776,9 @@ font-weight: 600;
   }
 }
 
+/* Button experiment */
+
+.button.alt a {
+background: rgb(168, 34, 132);
+border: 1px solid rgb(250, 242, 252);
+}
