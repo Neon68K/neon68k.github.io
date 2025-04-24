@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: X68000 Games Setup for MiSTer
+title: Neon68K — X68000 Games Setup for MiSTer
 url: "https://neon68k.com"
 baseurl:
 
@@ -9,13 +9,13 @@ baseurl:
 logo: /siteicon.png
 description: The easiest X68000 games setup for MiSTer
 author:
-  name: X68K Setup for MiSTer
+  name: Neon68K — X68000 Setup for MiSTer
   email:
   twitter: 
 social:
   name: 
   links:
-    - https://x68k.us
+    - https://neon68k.com
 
 # -----
 # Build
