@@ -781,4 +781,17 @@ font-weight: 600;
 .button.alt a {
 background: rgb(168, 34, 132);
 border: 1px solid rgb(250, 242, 252);
+color: rgb(250, 242, 252);
+text-shadow: 0 0 4px rgba(250, 242, 252, 0.6), 0 0 8px rgba(168, 34, 132, 0.5);
+box-shadow: 0 0 6px rgba(168, 34, 132, 0.4), 0 0 15px rgba(168, 34, 132, 0.3);
+border-radius: 4px;
+padding: 14px 40px;
+font-weight: bold;
+transition: all 0.3s ease-in-out;
+}
+
+.button.alt a:hover {
+  box-shadow: 0 0 8px rgba(168, 34, 132, 0.6), 0 0 20px rgba(168, 34, 132, 0.5);
+  text-shadow: 0 0 6px rgba(250, 242, 252, 0.7), 0 0 12px rgba(168, 34, 132, 0.6);
+  transform: scale(1.03);
 }
