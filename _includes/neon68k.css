@@ -775,3 +775,33 @@ font-weight: 600;
     background-color: #222;      
   }
 }
+
+/* Button experiment */
+
+.button.alt a {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 16px 50px;
+  color: #ff00cc;
+  text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+  box-shadow: 0 0 5px #ff00cc, 0 0 20px #ff00cc, 0 0 40px #ff00cc;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.button a, input[type="submit"] {
+  text-decoration: none;
+  padding: 10px 30px;
+  background: transparent;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: inherit; /* inherited from .button.alt a */
+}
+
+.button.alt a:hover {
+  background: rgba(255, 0, 204, 0.1);
+  box-shadow: 0 0 10px #ff00cc, 0 0 30px #ff00cc, 0 0 60px #ff00cc;
+  text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc, 0 0 40px #ff00cc;
+  transform: scale(1.05);
+}
