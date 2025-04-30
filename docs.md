@@ -29,6 +29,10 @@ video_mode=256,256,60
 vscale_mode=1
 video_mode=512,1024,60
 
+[video=304x448]
+vscale_mode=1
+video_mode=304,448,60
+
 [video=512x240]
 vscale_mode=1
 video_mode=512,240,60
