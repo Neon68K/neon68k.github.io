@@ -13,6 +13,10 @@ forced_scandoubler=0
 vga_scaler=1
 direct_video=0
 
+[video=224x496]
+vscale_mode=1
+video_mode=448,992,60
+
 [video=256x240]
 vscale_mode=1
 video_mode=256,240,60
@@ -23,7 +27,11 @@ video_mode=256,256,60
 
 [video=256x512]
 vscale_mode=1
-video_mode=256,512,60
+video_mode=512,1024,60
+
+[video=304x448]
+vscale_mode=1
+video_mode=304,448,60
 
 [video=512x240]
 vscale_mode=1
