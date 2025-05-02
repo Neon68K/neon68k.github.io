@@ -199,8 +199,8 @@ padding: 0;
 header {
 color: #fff;
 padding: 20px 0;
-background: #92000a;
-background: linear-gradient(to bottom,#92000a 0%,#92000a 100%) no-repeat #92000a;
+background: black;
+background: linear-gradient(to bottom,black 0%,black 100%) no-repeat black;
 }
 header a {
 color: #fff;
