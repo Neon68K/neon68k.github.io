@@ -17,6 +17,10 @@ direct_video=0
 vscale_mode=1
 video_mode=448,992,60
 
+[video=248x512]
+vscale_mode=1
+video_mode=496,1024,60
+
 [video=256x240]
 vscale_mode=1
 video_mode=256,240,60
@@ -32,6 +36,10 @@ video_mode=512,1024,60
 [video=304x448]
 vscale_mode=1
 video_mode=304,448,60
+
+[video=456x512]
+vscale_mode=1
+video_mode=456,512,60
 
 [video=512x240]
 vscale_mode=1
