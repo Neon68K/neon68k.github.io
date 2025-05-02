@@ -94,7 +94,7 @@ li {
 pre {
   font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   color: #fff;
-  background-color: rgb(239, 241, 242);  
+  background-color: #222;      
   padding: 16px;
   border-radius: 6px;
   margin: 0 -16px 20px -16px;
@@ -105,7 +105,7 @@ code {
   padding: .2em .4em;
   font-size: 85%;
   border-radius: 6px;
-  background-color: rgb(239, 241, 242);
+  background-color: #222;      
 }
 
 pre code {
