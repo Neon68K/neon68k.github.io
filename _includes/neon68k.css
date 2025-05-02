@@ -31,6 +31,7 @@
 }
 html {
   background: #000;
+  color: #fff;
 }
 html,body {
   margin: 0;
@@ -145,7 +146,7 @@ pre code {
 }
 
 .content section:nth-child(odd) {
-background-color: #f5f5f5;
+background-color: #000;
 }
 .hero {
 color: #ffffff;
@@ -769,7 +770,7 @@ font-weight: 600;
   background: #000;
   }
   .content section:nth-child(odd) {
-  background-color: #141414;
+  background-color: #000;
   }
   pre, code {
     background-color: #222;      
