@@ -70,7 +70,7 @@ h3 {
 }
 p,address {
   /* font-size: 1.38em; */
-  color: #666;
+  color: #fff;
   margin-bottom: 20px;
   font-weight: 300;
   line-height: 1.4em;
@@ -85,14 +85,14 @@ ol {
 }
 
 li {
-  color: #666;
+  color: #fff;
   line-height: 1.4em;
   margin: 0.25em 0;
 }
 
 pre {
   font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
-  color: #666;
+  color: #fff;
   background-color: rgb(239, 241, 242);  
   padding: 16px;
   border-radius: 6px;
@@ -224,7 +224,7 @@ display: block;
 width: auto;
 }
 .content {
-background: #fff;
+background: black;
 padding: 0;
 position: relative;
 }
@@ -370,7 +370,7 @@ color: #fff;
 font-weight: normal;
 }
 .faq {
-color: #666;
+color: #fff;
 }
 @media (min-width:768px) {.faq {
   columns: 2;
@@ -444,7 +444,7 @@ margin-top: 0;
 text-align: center;
 }
 .blog-post h3 a {
-color: #000;
+color: #fff;
 text-decoration: none;
 font-weight: normal;
 font-size: 1.3em;
