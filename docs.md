@@ -2,11 +2,11 @@
 title: X68000 Games Setup for MiSTer
 --- 
 
-The Sharp X68000 computer is a system that uses a lot of different resolutions across 15kHz, 24kHz and 31kHz, so we will need to use the VGA scaler, and add some settings for its more uncommon resolutions.
+### X68000 and external scalers
 
-(The X68000 core also does not support Direct Video (yet?), so if you are using a RetroTink 4K scaler, auto-configuration of the scaler settings will not work — you will have to load a profile manually or just use the defaults.)
+The X68000 core does not support the MiSTer's Direct Video feature, and this can cause scaling issues if you're using an external scaler with your MiSTer. To correct this, you can define specific output resolutions in your `MiSTer.ini` to force the MiSTer scaler to output a resolution close to (and sometimes exactly matching) the original resolution, allowing your scaler to scale it properly.
 
-Add this configuration to your `MiSTer.ini`:
+If you're using an external scaler with your MiSTer (like a Retrotink4k, Morph4k, or OSSC Pro), add this to your `MiSTer.ini`. **If you're not using an external scaler, they should not be used**
 ```
 [X68000]
 forced_scandoubler=0
