@@ -6,7 +6,7 @@ title: X68000 Games Setup for MiSTer
 
 The X68000 core does not support the MiSTer's Direct Video feature, and this can cause scaling issues if you're using an external scaler with your MiSTer. To correct this, you can define specific output resolutions in your `MiSTer.ini` to force the MiSTer scaler to output a resolution close to (and sometimes exactly matching) the core's original resolution, allowing your scaler to scale it properly.
 
-If you're using an external scaler with your MiSTer (like a Retrotink4k, Morph4k, or OSSC Pro), add this to your `MiSTer.ini`. **If you're not using an external scaler, they should not be used**
+If you're using an external scaler with your MiSTer (like a Retrotink4k, Morph4k, or OSSC Pro), add this to your `MiSTer.ini`.
 ```
 [X68000]
 forced_scandoubler=0
