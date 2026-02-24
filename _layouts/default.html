@@ -32,7 +32,9 @@
 
 		<header>
 			<div class="container">
-				<div class="company-name"><h1 style="margin: 0.5em 0"><a {% if page.url =='/' %} style="visibility:hidden" {% endif %} href="{{ site.baseurl }}/">Neon68K.com</a></h1></div>
+				{% unless page.url == '/' %}
+					<div class="company-name"><h1 style="margin: 0.5em 0"><a href="{{ site.baseurl }}/">Neon68K.com</a></h1></div>
+				{% endunless %}
 				{% include navigation.html %}
 			</div>
 		</header>
