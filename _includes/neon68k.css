@@ -621,6 +621,19 @@ margin: 18px 0 0 0;
 display: inline-block;
 padding: 10px 16px;
 font-size: .9em;
+background: rgb(168, 34, 132);
+border: 1px solid rgb(250, 242, 252);
+color: rgb(250, 242, 252);
+text-shadow: 0 0 4px rgba(250, 242, 252, 0.6), 0 0 8px rgba(168, 34, 132, 0.5);
+box-shadow: 0 0 6px rgba(168, 34, 132, 0.4), 0 0 15px rgba(168, 34, 132, 0.3);
+border-radius: 4px;
+font-weight: bold;
+transition: all 0.3s ease-in-out;
+}
+.news-grid .news-card .button a:hover {
+  box-shadow: 0 0 8px rgba(168, 34, 132, 0.6), 0 0 20px rgba(168, 34, 132, 0.5);
+  text-shadow: 0 0 6px rgba(250, 242, 252, 0.7), 0 0 12px rgba(168, 34, 132, 0.6);
+  transform: scale(1.03);
 }
 .news-grid + .pagination {
 margin-top: 28px;
@@ -985,11 +998,6 @@ font-weight: 600;
   }
   .news-grid .news-card .news-excerpt {
     color: #dbe3ec;
-  }
-  .news-grid .news-card .button a {
-    background: #2f81f7;
-    border-color: rgba(255,255,255,0.3);
-    color: #fff;
   }
   .blog-filter a {
     background: #11141a;
