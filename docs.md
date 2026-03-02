@@ -6,64 +6,108 @@ title: X68000 Games Setup for MiSTer
 
 The X68000 core does not support the MiSTer's Direct Video feature, and this can cause scaling issues if you're using an external scaler with your MiSTer. To correct this, you can define specific output resolutions in your `MiSTer.ini` to force the MiSTer scaler to output a resolution close to (and sometimes exactly matching) the core's original resolution, allowing your scaler to scale it properly.
 
-If you're using an external scaler with your MiSTer (like a Retrotink4k, Morph4k, or OSSC Pro), add this to your `MiSTer.ini`.
+If you're using an external scaler with your MiSTer (like a Retrotink4k, Morph4k, or OSSC Pro), add this to your `MiSTer.ini`. A big shoutout to **MisterPokeylope** for sharing their modelines with us ❤️.
+
 ```
 [X68000]
 forced_scandoubler=0
-vga_scaler=1
 direct_video=0
 
+[video=256x224]
+vscale_mode=0
+video_mode=512,448,60
+
+[video=256x240]
+vscale_mode=0
+video_mode=512,480,60
+
+[video=256x256]
+vscale_mode=0
+video_mode=512,512,60
+
+[video=384x224]
+vscale_mode=0
+video_mode=768,448,60
+
+[video=384x256]
+vscale_mode=0
+video_mode=768,512,60
+
+[video=512x240]
+vscale_mode=0
+video_mode=512,480,60
+
+[video=512x256]
+vscale_mode=0
+video_mode=512,512,60
+
+[video=640x240]
+vscale_mode=0
+video_mode=640,480,60
+
+[video=640x256]
+vscale_mode=0
+video_mode=640,512,60
+
+[video=512x480]
+vscale_mode=0
+video_mode=512,480,60
+
+[video=512x512]
+vscale_mode=0
+video_mode=512,512,60
+
+[video=640x512]
+vscale_mode=0
+video_mode=640,512,60
+
+[video=768x512]
+vscale_mode=0
+video_mode=768,512,60
+
+[video=1024x512]
+vscale_mode=0
+video_mode=1024,512,60
+
+[video=1024x1024]
+vscale_mode=0
+video_mode=1024,1024,60
+
+[video=1280x512]
+vscale_mode=0
+video_mode=1280,512,60
+
 [video=224x496]
-vscale_mode=1
+vscale_mode=0
 video_mode=448,992,60
 
 [video=248x512]
-vscale_mode=1
+vscale_mode=0
 video_mode=496,1024,60
 
-[video=256x240]
-vscale_mode=1
-video_mode=256,240,60
-
-[video=256x256]
-vscale_mode=1
-video_mode=256,256,60
-
 [video=256x512]
-vscale_mode=1
-video_mode=512,1024,60
+vscale_mode=0
+video_mode=512,512,60
 
 [video=304x448]
-vscale_mode=1
+vscale_mode=0
 video_mode=304,448,60
 
 [video=456x512]
-vscale_mode=1
+vscale_mode=0
 video_mode=456,512,60
 
-[video=512x240]
-vscale_mode=1
-video_mode=512,240,60
+[video=384x512]
+vscale_mode=0
+video_mode=384,16,64,336,512,4,3,49,25216
 
-[video=512x256]
-vscale_mode=1
-video_mode=512,256,60
+[video=256x448]
+vscale_mode=0
+video_mode=512,448,55.5
 
-[video=512x512]
-vscale_mode=1
-video_mode=512,512,60
-
-[video=640x480]
-vscale_mode=1
-video_mode=640,480,60
-
-[video=768x512]
-vscale_mode=1
-video_mode=768,512,60
-
-[video=1024x1024]
-vscale_mode=1
-video_mode=1024,1024,60
+[video=256x480]
+vscale_mode=0
+video_mode=512,480,54.2
 ```
 
 ### English + Japanese Games
