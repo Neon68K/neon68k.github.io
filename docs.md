@@ -13,101 +13,176 @@ If you're using an external scaler with your MiSTer (like a Retrotink4k, Morph4k
 forced_scandoubler=0
 direct_video=0
 
+
+; ---------- 15 kHz family ----------
+
+[video=240x224]
+vscale_mode=1
+video_mode=480,448,61.5
+
 [video=256x224]
-vscale_mode=0
+vscale_mode=1
 video_mode=512,448,60
 
 [video=256x240]
-vscale_mode=0
+vscale_mode=1
 video_mode=512,480,60
 
 [video=256x256]
-vscale_mode=0
+vscale_mode=1
 video_mode=512,512,60
 
+[video=320x224]
+vscale_mode=1
+video_mode=640,448,61.5
+
 [video=384x224]
-vscale_mode=0
+vscale_mode=1
 video_mode=768,448,60
 
 [video=384x256]
-vscale_mode=0
+vscale_mode=1
 video_mode=768,512,60
 
 [video=512x240]
-vscale_mode=0
+vscale_mode=1
 video_mode=512,480,60
 
 [video=512x256]
-vscale_mode=0
+vscale_mode=1
 video_mode=512,512,60
 
 [video=640x240]
-vscale_mode=0
+vscale_mode=1
 video_mode=640,480,60
 
 [video=640x256]
-vscale_mode=0
+vscale_mode=1
 video_mode=640,512,60
 
-[video=512x480]
-vscale_mode=0
-video_mode=512,480,60
 
+; ---------- 31 kHz family ----------
+
+[video=384x512]
+vscale_mode=1
+video_mode=384,16,64,336,512,4,3,49,25216
+
+[video=384x576]
+vscale_mode=1
+video_mode=384,16,64,336,576,8,2,21,25576
+
+[video=512x424]
+vscale_mode=1
+video_mode=512,16,64,208,424,8,3,133,25208
+
+[video=480x480]
+vscale_mode=1
+video_mode=480,480,59.9
+
+; stability container (integer 2× width)
+[video=512x480]
+vscale_mode=1
+video_mode=1024,480,60
+
+; avoid low-TMDS raw 512×512
 [video=512x512]
-vscale_mode=0
-video_mode=512,512,60
+vscale_mode=1
+video_mode=1024,1024,60
 
 [video=640x512]
-vscale_mode=0
+vscale_mode=1
 video_mode=640,512,60
 
 [video=768x512]
-vscale_mode=0
+vscale_mode=1
 video_mode=768,512,60
 
 [video=1024x512]
-vscale_mode=0
+vscale_mode=1
 video_mode=1024,512,60
 
-[video=1024x1024]
-vscale_mode=0
-video_mode=1024,1024,60
-
 [video=1280x512]
-vscale_mode=0
+vscale_mode=1
 video_mode=1280,512,60
 
+
+; ---------- overscan / uncommon framebuffers ----------
+
 [video=224x496]
-vscale_mode=0
+vscale_mode=1
 video_mode=448,992,60
 
 [video=248x512]
-vscale_mode=0
+vscale_mode=1
 video_mode=496,1024,60
 
-[video=256x512]
-vscale_mode=0
-video_mode=512,512,60
-
-[video=304x448]
-vscale_mode=0
-video_mode=304,448,60
-
 [video=456x512]
-vscale_mode=0
+vscale_mode=1
 video_mode=456,512,60
 
-[video=384x512]
-vscale_mode=0
-video_mode=384,16,64,336,512,4,3,49,25216
+
+; ---------- exact 2× transport widths ----------
+
+[video=240x480]
+vscale_mode=1
+video_mode=480,480,59.9
+
+[video=224x560]
+vscale_mode=1
+video_mode=448,560,52.9
+
+[video=256x471]
+vscale_mode=1
+video_mode=512,471,60.6
+
+[video=224x512]
+vscale_mode=1
+video_mode=448,512,55.5
+
+[video=240x512]
+vscale_mode=1
+video_mode=480,512,55.5
+
+[video=240x536]
+vscale_mode=1
+video_mode=480,536,54.3
 
 [video=256x448]
-vscale_mode=0
+vscale_mode=1
 video_mode=512,448,55.5
 
+[video=256x464]
+vscale_mode=1
+video_mode=512,464,55.5
+
 [video=256x480]
-vscale_mode=0
+vscale_mode=1
 video_mode=512,480,54.2
+
+[video=256x512]
+vscale_mode=1
+video_mode=512,512,60
+
+[video=256x576]
+vscale_mode=1
+video_mode=512,576,50.7
+
+; widths that must remain exact 2× for integer fidelity
+[video=304x448]
+vscale_mode=1
+video_mode=608,448,55.5
+
+[video=320x448]
+vscale_mode=1
+video_mode=640,448,55.5
+
+[video=344x448]
+vscale_mode=1
+video_mode=688,448,56.3
+
+[video=360x480]
+vscale_mode=1
+video_mode=720,480,56.3
 ```
 
 ### English + Japanese Games
